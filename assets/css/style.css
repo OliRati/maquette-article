@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url(../f);
+}
+
 .box1 {
     background-color: hsl(217, 19% 35%);
 }
@@ -39,6 +44,7 @@ article {
 
 .image {
     width: 30%;
+    min-width: 300px;
     height: auto;
     overflow: hidden;
 }
@@ -95,8 +101,8 @@ article {
 }
 
 .author>img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     padding: 8px;
     background-color: #CCC;
     border-radius: 50%;  
@@ -109,4 +115,27 @@ article {
 .author .date {
     font-size: 0.8rem;
     color: #999;
+}
+
+@media (max-width: 1050px) {
+    article {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .image {
+        width: 100%;
+        min-width: unset;
+        height: 200px;
+    }
+
+    .message {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .text, .author {
+        margin: 1rem;
+        width: calc(100% - 2rem);
+    }
 }

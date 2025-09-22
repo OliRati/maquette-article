@@ -33,7 +33,7 @@ article {
     flex-direction: row;
     background-color: white;
     flex-wrap: nowrap;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -99,7 +99,7 @@ article {
     height: 30px;
     padding: 8px;
     background-color: #CCC;
-    border-radius: 50%;  
+    border-radius: 50%;
 }
 
 .author .name {
@@ -127,7 +127,8 @@ article {
         margin: 1rem 0;
     }
 
-    .text, .author {
+    .text,
+    .author {
         margin: 1rem;
         width: calc(100% - 2rem);
     }

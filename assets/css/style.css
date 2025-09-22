@@ -27,6 +27,8 @@
 
 body {
     background-color: #DDD;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
 }
 
 article {

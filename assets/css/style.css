@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Inter';
-    src: url(../f);
-}
-
 .box1 {
     background-color: hsl(217, 19% 35%);
 }
@@ -36,9 +31,8 @@ article {
     margin: 50px auto;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
     background-color: white;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     border-radius: 1rem;
     overflow: hidden;
@@ -62,7 +56,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem 0;
+    margin: 0 2rem;
     width: 60%
 }
 
@@ -71,13 +65,11 @@ article {
 }
 
 .text h1 {
-    font-size: 1.5rem;
     color: black;
     margin-bottom: 10px;
 }
 
 .text p {
-    font-size: 1rem;
     color: #555;
     margin-bottom: 20px;
 }
@@ -115,11 +107,10 @@ article {
 }
 
 .author .date {
-    font-size: 0.8rem;
     color: #999;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1024px) {
     article {
         flex-direction: column;
         width: 90%;
